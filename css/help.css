@@ -1,0 +1,18 @@
+body{
+	background-color: #ca670a;background-image: url("../graphics/all/design5.png");
+	width: 100%;height: 100%;overflow-x: hidden;font-size: 20px;user-select: none;
+}
+#controls{
+	width: 50%;height: 100%;position: absolute;top: 0;left: 0;
+	font-family: monospace;color: white;text-align: center;
+}
+#tips{
+	width: 50%;height: 100%;position: absolute;top: 0;left: 50%;
+	font-family: monospace;color: white;text-align: center;
+}
+#heading{
+	font-size: 48px;color: yellow;text-decoration: none;
+}
+#text{
+	font-size: 28px;color: #FFFF40;
+}

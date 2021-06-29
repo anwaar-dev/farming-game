@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MY Sims: Farmer's Life</title>
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="icon" href="../graphics/icon.png">
+</head>
+	<!-- USER INTERFACE -->
+	<div id="timeBar"><div id="timeBarHours" title="Hours"></div><div id="timeBarMins" title="Minutes"></div></div>
+	<div id="dateBar"><div id="dateBarDays" title="Days"></div><div id="dateBarMonths" title="Months"></div></div>
+	<div id="moneyBar" title="Money"><div id="moneySymbol"></div><div id="money">100</div></div>
+	<div id="night"></div><div id="sleepScreen"></div><div id="darkScreen" onclick="dSClick()"></div>
+	<!-- MENU -->
+	<div id="menuButton" onclick="menuButtonClick()"></div>
+	<div id="menu">
+		<div class="inventory1 menuItem" onclick="inventoryShow()"><div class="menuTxt">Inventory</div></div>
+		<div class="save menuItem" onclick="saveGame(1)"><div class="menuTxt">Save Game</div></div>
+		<a href="help.html" target="blank"><div class="help menuItem"><div class="menuTxt">Help</div></div></a>
+	</div><div class="credit">Made By: Anwaar Ullah Khan</div>
+	<!-- INVENTORY -->
+	<div id="inventory">INVENTORY<div id="inventoryCloseButton" onclick="inventoryShow()">X</div>
+	<div id="inventoryPic"></div>
+	<div id="inventoryInfo"></div>
+	<div id="inventorySlotCase">
+		<div class="slot slot1"></div><div class="slot slot2"></div><div class="slot slot3"></div>
+		<div class="slot slot4"></div><div class="slot slot5"></div><div class="slot slot6"></div>
+		<div class="slot slot7"></div><div class="slot slot8"></div><div class="slot slot9"></div>
+		<div class="slot slot10"></div><div class="slot slot11"></div><div class="slot slot12"></div>
+		<div class="slot slot13"></div><div class="slot slot14"></div><div class="slot slot15"></div>
+		<div class="slot slot16"></div>
+			<!-- ITEMS -->
+		<div class="item carrot" onclick="carrotClick()"><div id="carrotQuantity"></div></div>
+		<div class="item corn" onclick="cornClick()"></div>
+	</div></div>
+	<!-- SELL ITEMS -->
+	<div id="sellPanel">
+		SELL ITEMS
+		<div id="sellPanel2">
+			<div class="sellPic"></div>
+			<div class="sellPriceBar"><div id="sellSymbol"></div><div id="sellPrice">0000</div></div>
+			<div class="sellMinus" onclick="sellMinusClick()">-</div>
+			<div class="sellQuantity">0</div>
+			<div class="sellPlus" onclick="sellPlusClick()">+</div>
+			<div class="sellButton2" onclick="sellButton2Click()">SELL</div>
+		</div>
+	</div>
+	<!-- PLAYER -->
+	<div id="range"><div id="popUp">INFO<div id="crsbtn" onclick="hidePopUp()">X</div></div><div id="player"></div></div> 
+	<!-- BUILDINGS -->
+	<div class="house house1"></div>
+	<div class="house house2"></div>
+	<div class="house house3"><div class="myhousetag">Home</div></div>
+	<div class="cage"></div>
+	<div class="tree1"></div>
+	<div class="crops1"></div>
+	<div class="field1"><div class="drop drop1"></div></div>
+	<div class="field2"><div class="drop drop2"></div></div>
+	<div class="field3"><div class="drop drop3"></div></div>
+	<div class="field4"><div class="drop drop4"></div></div>
+	<div class="field5"><div class="drop drop5"></div></div>
+	<div class="field6"><div class="drop drop6"></div></div>
+	<div class="streetLight sl1"><div class="light1"></div></div>
+	<div class="streetLight sl2"><div class="light1 l2">'</div></div>
+	<div class="bench1"></div>
+	<div class="bench2"></div>
+	<div class="flowerPot1"></div>
+
+	<div class="market"></div>
+	<div class="shop1"></div>
+	<div class="shop2"></div>
+	<div class="shop3"></div>
+	<div class="shop4"></div>
+	<div class="shop5"></div>
+	<div class="shop6"></div>
+	<div class="shop7"></div>
+	
+
+	<!-- NATURE -->
+	<div class="pond1"><div class="fish1"></div><div class="fish2"></div></div>
+	<div class="bush1"></div>
+	<div class="bush2"></div>
+	<!-- PEOPLE -->
+	<div class="OldMan"></div>
+<script src="../js/index.js"></script>
+</body>
+</html>

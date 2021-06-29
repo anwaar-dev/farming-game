@@ -1,0 +1,93 @@
+body{
+	background-image: url("../graphics/all/bg1.png");
+	background-size: cover;background-repeat: no-repeat;
+	width: 100%;height: 100%;
+}
+#darkscreen{
+	width: 100%;height: 100%;
+	position: absolute;top: 0;left: 0;
+	background-color: black;opacity: 0.3;
+	animation: opacityChange 2s infinite linear;
+}
+#login{
+	width: 450px;height: 280px;
+	background-color: #C7995D;z-index: 5;
+	position: absolute;left: 50%;top: 50%;
+	transform: translate(-50%,-50%);
+	border-top: 20px solid #AD670D;
+	border-radius: 5%;color: white;
+	font-size: 44px;font-family: monospace;
+	box-shadow: 0 0 30px 15px black;
+}
+#register{display: none;
+	width: 450px;height: 280px;
+	background-color: #C7995D;z-index: 5;
+	position: absolute;left: 50%;top: 50%;
+	transform: translate(-50%,-50%);
+	border-top: 20px solid #AD670D;
+	border-radius: 5%;;color: white;
+	box-shadow: 0 0 30px 15px black;
+	font-size: 44px;font-family: monospace;
+}
+label{position: absolute;}
+input{
+	height: 44px;width: 50%;position: absolute;
+	vertical-align: middle;text-align: center;
+	outline: none;color: #AD670D;
+	font-size: 22px;font-family: monospace;
+}
+input:active{outline: none;}
+.l1{top: 35%;left: 8%;}
+.l3{top: 35%;left: 8%;}
+#n1{top: 35%;left: 35%;}
+#n2{top: 35%;left: 35%;}
+h5{
+	text-align: center;position: absolute;
+	top: 3%;margin: 0;padding: 0;left: 3.5%;
+	font-size: 38px;}
+samp{font-size: 46px;color: #FFCD40;}
+.button1{
+	top: 60%;left: 50%;position: absolute;transition-duration: 0.4s;
+	transform: translate(-50%,0);color: #FFCD40;user-select: none;
+	font-size: 38px;text-align: center;border-radius: 10px;
+	height: 18%;width: 40%;background-color: #AD670D; cursor: pointer;
+}
+.button1:hover{transform: translateY(-12px) translate(-50%,0);}
+.button1:active{transform: translateY(2px) translate(-50%,0);}
+.button2{
+	top: 60%;left: 50%;position: absolute;transition-duration: 0.4s;
+	transform: translate(-50%,0);color: #FFCD40;user-select: none;
+	font-size: 38px;text-align: center;border-radius: 10px;
+	height: 18%;width: 40%;background-color: #AD670D; cursor: pointer;
+}
+.button2:hover{transform: translateY(-12px) translate(-50%,0);}
+.button2:active{transform: translateY(2px) translate(-50%,0);}
+#registerlink{
+	font-size: 18px;color: white;text-align: center;cursor: pointer;
+	top: 80%;position: absolute;left: 50%;transform: translate(-50%,0);
+	user-select: none;
+}
+#registerlink:hover{
+	color: yellow;
+}
+#loginlink{
+	font-size: 18px;color: white;text-align: center;cursor: pointer;user-select: none;
+	top: 80%;position: absolute;left: 50%;transform: translate(-50%,0);
+}
+#loginlink:hover{
+	color: yellow;
+}
+
+@keyframes opacityChange{
+	0%{opacity: 0.3;}
+	10%{opacity: 0.34;}
+	20%{opacity: 0.38;}
+	30%{opacity: 0.42;}
+	40%{opacity: 0.46;}
+	50%{opacity: 0.5;}
+	60%{opacity: 0.46;}
+	70%{opacity: 0.42;}
+	80%{opacity: 0.38;}
+	90%{opacity: 0.34;}
+	100%{opacity: 0.3;}
+}

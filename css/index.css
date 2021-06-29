@@ -1,0 +1,512 @@
+body{
+	width: 2732px;height: 1536px;font-family: monospace;
+	position: absolute;overflow: hidden;
+	background-image: url("../graphics/nature/grass2.png");
+	cursor:url("../graphics/mouse.png"), default;
+}
+#player{
+	height: 48px;width: 32px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	transform: translate(-50%,-50%);
+	top: 50%;left: 50%;z-index: 60;
+}
+#range{
+	height: 300px;width: 300px;
+	position: absolute;
+	top: 5.6%;left: 400px;
+}
+#popUp{
+	height: 150px;width: 300px;position: absolute;color: yellow;
+	background-color: #DBA75E;display: none;z-index: 52;user-select: none;
+	transform: translate(-50%,0%);border: 2px solid #E58E40;
+	font-family: monospace;font-size: 20px;text-align: center;
+}
+.house{
+	position: absolute;top: 4%;width: 152px;height: 135px;
+	background-image: url("../graphics/building/house.png");
+	background-repeat: no-repeat;background-size: cover;
+}
+.house1{left: 300px}
+.house2{left: 550px}
+.house3{background-image: url("../graphics/building/house2.png");left: 800px;}
+.cage{
+	width: 84px;height: 62px;top: 130px;left: 984px;background-image:url("../graphics/building/cage.png"); 
+	background-repeat: no-repeat;background-size: cover;position: absolute;
+}
+.tree1{
+	width: 42px;height: 122px;position: absolute;
+	left: 3%;top: 20%;background-image:  url("../graphics/nature/tree.png");
+}
+.crops1{
+	height: 192px;width: 190px;position: absolute;top: 6.5%;left: 2%;
+	background-image:url("../graphics/nature/tree2.png");
+}
+.field1{
+	width: 281.6px;height: 128px;
+	user-select: none;position: absolute;top: 70px;left: 1500px;
+	background-image: url("../graphics/nature/field.png");
+}
+.field2{
+	width: 281.6px;height: 128px;
+	user-select: none;position: absolute;top: 270px;left: 1500px;
+	background-image: url("../graphics/nature/field.png");
+}
+.field3{
+	width: 281.6px;height: 128px;
+	user-select: none;position: absolute;top: 470px;left: 1500px;
+	background-image: url("../graphics/nature/field.png");
+}
+.field4{
+	width: 281.6px;height: 128px;
+	user-select: none;position: absolute;top: 70px;left: 1800px;
+	background-image: url("../graphics/nature/field.png");
+}
+.field5{
+	width: 281.6px;height: 128px;
+	user-select: none;position: absolute;top: 270px;left: 1800px;
+	background-image: url("../graphics/nature/field.png");
+}
+.field6{
+	width: 281.6px;height: 128px;
+	user-select: none;position: absolute;top: 470px;left: 1800px;
+	background-image: url("../graphics/nature/field.png");
+}
+.streetLight{
+	width: 14px;height: 64px;position: absolute;z-index: 5;
+	background-image: url("../graphics/building/streetLight.png");
+}
+.light1{color:white;animation: rotation 2s infinite linear;transition-duration:0.6s;display: none;box-shadow: 0 0 28px 17px #EEF86B;height: 30px;width: 30px;position: absolute;border-radius: 100%;top:-6px;left:-7.3px;background: #EDF86A;opacity: 0.6;z-index: 9;}
+.sl1{left: 492px;top: 110px;z-index: 55;}
+.sl2{left: 745px;top: 110px;z-index: 55;}
+.market{
+	background-image: url("../graphics/nature/grassMarket.png");
+	height: 600px;width: 900px;top: 60%;left: 3%;position: absolute;
+	border-radius: 100px;
+}
+.shop1{
+	width: 397px;height: 120px;position: absolute;top: 60%;left: 10%;
+	background-image: url("../graphics/building/shop.png");
+}
+.shop2{
+	width: 74px;height: 79px;position: absolute;top: 61%;left: 4%;
+	background-image: url("../graphics/building/stall1.png");
+}
+.shop3{
+	width: 192px;height: 64px;position: absolute;top: 72%;left: 12%;
+	background-image: url("../graphics/building/vegs.png");
+}
+.shop4{
+	width: 65px;height: 96px;position: absolute;top: 67%;left: 4%;
+	background-image: url("../graphics/building/cartens.png");
+}
+.shop5{
+	width: 65px;height: 121px;position: absolute;top: 74%;left: 4%;
+	background-image: url("../graphics/building/vegs2.png");
+}
+.shop6{
+	width: 57px;height: 96px;position: absolute;top: 61%;left: 27.6%;
+	background-image: url("../graphics/building/barells.png");
+}
+.shop7{
+	width: 106px;height: 195px;position: absolute;top: 71%;left: 30%;
+	background-image: url("../graphics/building/shop2.png");display: none;
+}
+.bench1{
+	width: 28px;height: 68px;background-image:url("../graphics/building/bench-r.png");
+	position: absolute;top: 332px;left: 132px;
+}
+.bench2{
+	width: 64px;height: 44px;background-image:url("../graphics/building/bench-d.png");
+	position: absolute;top: 288px;left: 158px;
+}
+.flowerPot1{
+	width: 45px;height: 24px;background-image: url("../graphics/building/flower-pot.png");
+	position: absolute;top: 164px;left: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+/*	 PEOPLE	 */
+.OldMan{
+	height: 48px;width: 32px;background-image: url("../graphics/people/nika-l.png");
+	position: absolute;top: 12%;left: 10%;
+}
+.fish1{
+	width: 15px;height: 8px;background-image: url("../graphics/people/fish1.png");
+	position: absolute;opacity: 0.3;
+}
+.fish2{
+	width: 15px;height: 8px;background-image: url("../graphics/people/fish1.png");
+	position: absolute;opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+/*	 UIs z-index=50	*/
+#menu{
+	width: 250px;height: 100%;position: fixed;z-index: 50;padding: 0;
+	top: 0;left: 100%;background-color: #81562D;font-family: monospace;
+	margin: 0;
+	border-left: 8px solid #A16C36;transition-duration: 0.6s;color: white;
+	text-align: center;padding-top: 48.5%;font-size: 15px;
+}
+#sellPanel{
+	width: 400px;height: 500px;background: #AB7045;position: fixed;
+	top: 50%;left: 50%;transform: translate(0%,-50%);z-index: 55;
+	border:10px solid #734900;font-family:monospace;font-size: 40px;
+	color: yellow;text-align: center;display: none;user-select: none;
+}
+#sellPanel2{
+	width: 100%;height: 90%;position: absolute;top: 10%;left: 0;
+}
+.myhousetag{
+	position: absolute;opacity: 0.6;z-index: 40;
+	top: -38%;left: 50%;text-align: center;
+	border:3px solid #4A3522;border-radius: 30%;
+	background-color: #AB7045;color: yellow;
+	width: 80%;height: 25%;font-family: sans-serif;
+	transform: translate(-50%,0);font-size: x-large;
+	animation: tagupdown 1.5s infinite linear;
+	user-select: none;background-image: url("../graphics/all/design1.png");
+}
+#moneyBar{
+	width: 150px;height: 45px;background-color: #FBFCFC;border:1px solid black;
+	position: fixed;top: 0;left: 130px;z-index: 70;border-top: none;text-align: center;
+	border-bottom-right-radius: 20px;font-family: sans-serif;
+	border-bottom-left-radius: 20px;
+	color: #204000;font-size: 32px;user-select: none;
+}
+#moneySymbol{
+	top: 10%;left: 5%;position: absolute;width: 22%;height: 34px;
+	background-image: url("../graphics/all/moneySymbol.png");background-repeat: no-repeat;
+}
+#money{
+	top: 6%;left: 30%;position: absolute;width: 70%;height: 32px;
+}
+#timeBar{
+	width: 120px;height: 45px;border-left: 1px solid black;
+	background: #FBFCFC;margin: 0;user-select: none;z-index: 70;
+	position: fixed;top: 0;left: 5px;border-right: 1px solid black;
+	font-family: sans-serif;color: #4A3F35;font-size: 34px;text-align: center;
+}
+#timeBarMins{
+	width: 50%;height: 100%;top: 8%;position: absolute;left: 60px;}
+#timeBarHours{
+	width: 50%;height: 100%;position: absolute;top: 8%;left: 0px;}
+#dateBar{
+	width: 120px;height: 20px;background: #E9EBEC;color: #4A3F35;
+	top: 45px;left: 5px;position: fixed;margin: 0;font-family: sans-serif;
+	text-align: center;font-size: 16px;border: 1px solid black;
+	border-top:1px solid #D8DCD8;user-select: none;z-index: 50;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+#dateBarMonths{width: 50%;height: 100%;top: 10%;position: absolute;left: 60px;}
+#dateBarDays{width: 50%;height: 100%;position: absolute;top: 10%;left: 0px;}
+#night{
+	background-color: darkblue;position: fixed;display: none;z-index: 41;
+	top: 0;left: 0;width: 100%;height: 100%;opacity: 0.5;transition-duration: 10s;
+}
+#sleepScreen{
+	background-color: black;position: fixed;display: none;z-index: 1;
+	top: 0;left: 0;width: 100%;height: 100%;opacity: 0;
+}
+#darkScreen{
+	background-color: black;position: fixed;z-index: 1;display: none;
+	top: 0;left: 0;width: 100%;height: 100%;opacity: 0.7;
+}
+.pond1{
+	height: 192px;width: 300px;position: absolute;top: 470px;left: -50px;
+	background-image: url("../graphics/nature/pond2.png");
+	background-repeat: no-repeat;background-size: cover;
+}
+.bush1{
+	height: 30px;width: 40px;top: 27%;left: 9.6%;position: absolute;background-size: cover;
+	background-image: url("../graphics/nature/stone.png");background-repeat: no-repeat;
+}
+.bush2{
+	height: 30px;width: 40px;top: 45%;left: 6%;position: absolute;background-size: cover;
+	background: url("../graphics/nature/stone.png");background-repeat: no-repeat;
+}
+samp{color: white;text-align: center;font-size: 16px;}
+#inventory{
+	width: 400px;height: 500px;position: fixed;transform: translate(-50%,-50%);
+	background-color: #E8B56B;z-index: 70;top: 50%;left: 50%;color: yellow;display: none;
+	border: 10px solid #FFDB8A;user-select: none;font-size: 38px;text-align: center;
+	box-shadow: 0 0 1px 2px #E58E40;
+}
+#inventoryCloseButton{
+	width: 50px;height: 30px;position: fixed;top: 0;right:0px;cursor:url("../graphics/pointer.png"), pointer;
+	background-color: #EB2856;color: white;font-size: 24px;text-align: center;border-bottom-left-radius: 8px;
+}
+#inventoryCloseButton:active{background-color: #CE234B}
+#inventorySlotCase{
+	height: 300px;width: 300px;position: fixed;top: 50%;left: 50%;background-color: #EEBB71;
+	border:2px solid #EEBB71;transform: translate(-50%,-25%);
+}
+#inventoryPic{
+	height: 100px;width: 100px;position: fixed;top: 22.5%;left: 25%;background-color: #DBA75E;
+	border:2px solid #E58E40;transform: translate(-50%,-50%);background-repeat: no-repeat;
+	background-size: cover;
+}
+.sellPic{
+	height: 100px;width: 100px;position: fixed;top: 22.5%;left: 50%;background-color: #C69F83;
+	border:2px solid #915F3A;transform: translate(-50%,-50%);background-repeat: no-repeat;
+	background-size: cover;
+}
+#inventoryInfo{
+	height: 100px;width: 185px;position: fixed;top: 22.5%;left: 64.5%;background-color: #B98D4E;
+	border:2px solid #E58E40;transform: translate(-50%,-50%);text-align: center;color: white;
+	font-size: large;
+}
+.slot{
+	height: 60px;width: 60px;background-color: #DBA75E;position: absolute;border:1px solid #DBA75E;
+}
+.slot1{top: 2.5%;left: 2.5%;}
+.slot2{top: 2.5%;left: 27%;}
+.slot3{top: 2.5%;left: 52%;}
+.slot4{top: 2.5%;left: 76.5%;}
+.slot5{top: 27%;left: 2.5%;}
+.slot6{top: 27%;left: 27%;}
+.slot7{top: 27%;left: 52%;}
+.slot8{top: 27%;left: 76.5%;}
+.slot9{top: 52%;left: 2.5%;}
+.slot10{top: 52%;left: 27%;}
+.slot11{top: 52%;left: 52%;}
+.slot12{top: 52%;left: 76.5%;}
+.slot13{top: 76.5%;left: 2.5%;}
+.slot14{top: 76.5%;left: 27%;}
+.slot15{top: 76.5%;left: 52%;}
+.slot16{top: 76.5%;left: 76.5%;}
+/*	 ITEMS   */
+.item{
+
+	width: 62px;height: 62px;position: absolute;display: none;
+	background-repeat: no-repeat;background-size: cover;cursor:url("../graphics/pointer.png"), pointer;
+}
+.item:hover{}
+.carrot{background-image: url("../graphics/nature/carrot.png");border:1px solid yellow;}
+#carrotQuantity{
+	background-color: #AB7045;border-radius: 50%;position: absolute;font-size: 16px;
+	height: 20px;width: 20px;top: 80%;left: 80%;z-index: 5;color: yellow;
+	border:1px solid yellow;text-align: center;
+}
+.corn{background-image: url("../graphics/nature/corn.png");}
+
+
+
+
+
+
+
+
+
+
+/*	 BUTTONS	*/
+#menuButton{
+	width: 70px;height: 50px;position: fixed;top: 0;
+	border-bottom-left-radius: 8px;background-image: url("../graphics/all/menuButton.png");
+	opacity: 0.75;z-index: 51;right: 0px;transition-duration: 0.5s;
+}
+#menuButton:hover{opacity: 1;cursor:url("../graphics/pointer.png"), pointer;}
+.menuItem{
+	position: fixed;width: 250px;height: 60px;text-align: center;
+	background-color: #7F5525;border: 1px solid #A16C36;user-select: none;
+	vertical-align: middle;font-size: 28px;cursor:url("../graphics/pointer.png"), pointer;padding:auto;
+	transition-duration: 0.3s;
+}
+.menuItem:hover{
+	background-color: #9E6934;
+}
+a{text-decoration: none;color: white;}
+.inventory1{top: 70px;}
+.save{top: 130px;}
+.help{top: 190px;}
+.credit{
+	top: 100%;left: 100%;position: fixed;height: 20px;width: 250px;
+	color: white;transform: translate(0,-100%);text-align: center;
+	font-size: 16px;z-index: 51;transition-duration: 0.6s;
+}
+#crsbtn{
+	width: 35px;height: 30px;top: 0;left: 88.5%;position: absolute;
+	background-color: #EB2856;color: white;font-size: 24px;border-bottom-left-radius: 8px;
+	user-select: none;
+}
+#crsbtn:active{background-color: #CE234B}
+.PopUpButton{
+	width: 80px;height: 32px;position: absolute;top: 70%;left: 50%;color: #FFCD40;
+	transform: translate(-50%,-50%);background-color: #AD670D;font-size: 22px;
+	border:2px solid #FFCD40;border-radius: 10px;transition-duration: 0.6s;
+}
+.PopUpButton:hover{transform:translate(-50%,-50%) translateY(-8px);}
+.PopUpButton:active{transform:translate(-50%,-50%) translateY(0px);}
+.fishingButton{font-size: 12px;}
+.waterButton{
+	background-image: url("../graphics/all/waterButton.png");background-size: cover;
+	width: 40px;height: 40px;position: absolute;top: 43%;left: 20%;color: #FFCD40;
+	transform: translate(-50%,-50%);background-color: #AD670D;font-size: 12px;
+	border-radius: 100px;transition-duration: 0.4s;border:1px solid #C8A989;cursor:url("../graphics/pointer.png"), pointer;
+}
+.waterButton:hover{transform:translate(-50%,-50%) translateY(-8px);box-shadow: 0 0 4px 4px white;}
+.waterButton:active{transform:translate(-50%,-50%) translateY(0px);}
+.harvestButton{
+	background-image: url("../graphics/all/harvest.png");background-size: cover;
+	width: 40px;height: 40px;position: absolute;top: 43%;left: 40%;color: #FFCD40;
+	transform: translate(-50%,-50%);background-color: #AD670D;font-size: 12px;
+	border-radius: 100px;transition-duration: 0.4s;border:1px solid #C8A989;cursor:url("../graphics/pointer.png"), pointer;
+}
+.harvestButton:hover{transform:translate(-50%,-50%) translateY(-8px);box-shadow:0 0 4px 4px white;}
+.harvestButton:active{transform:translate(-50%,-50%) translateY(0px);}
+.sowButton{
+	background-image: url("../graphics/all/sowSeeds.png");background-size: cover;
+	width: 40px;height: 40px;position: absolute;top: 43%;left: 60%;color: #FFCD40;
+	transform: translate(-50%,-50%);background-color: #AD670D;font-size: 12px;
+	border-radius: 100px;transition-duration: 0.4s;border:1px solid #C8A989;cursor:url("../graphics/pointer.png"), pointer;
+}
+.sowButton:hover{transform:translate(-50%,-50%) translateY(-8px);box-shadow: 0 0 4px 4px white;}
+.sowButton:active{transform:translate(-50%,-50%) translateY(0px);}
+.cleanButton{
+	background-image: url("../graphics/all/clean.png");background-size: cover;
+	width: 40px;height: 40px;position: absolute;top: 43%;left: 80%;color: #FFCD40;
+	transform: translate(-50%,-50%);background-color: #AD670D;font-size: 12px;
+	border-radius: 100px;transition-duration: 0.4s;border:1px solid #C8A989;cursor:url("../graphics/pointer.png"), pointer;
+}
+.cleanButton:hover{transform:translate(-50%,-50%) translateY(-8px);box-shadow: 0 0 4px 4px white;}
+.cleanButton:active{transform:translate(-50%,-50%) translateY(0px);}
+.sellButton{
+	width: 60px;height: 25px;position: absolute;top: 52%;left: 43%;color: #FFCD40;
+	transform: translate(-50%,-50%);background-color: #AD670D;font-size: 20px;
+	border-radius: 20px;transition-duration: 0.4s;border:2px solid #FFCD40;
+	text-align: center;
+}
+.sellButton:hover{transform:translate(-50%,-50%) translateY(-8px);}
+.sellButton:active{transform:translate(-50%,-50%) translateY(0px);}
+.buyButton{
+	width: 60px;height: 25px;position: absolute;top: 52%;left: 73%;color: #FFCD40;
+	transform: translate(-50%,-50%);background-color: #AD670D;font-size: 20px;
+	border-radius: 20px;transition-duration: 0.4s;border:2px solid #FFCD40;
+	text-align: center;
+}
+.buyButton:hover{transform:translate(-50%,-50%) translateY(-8px);}
+.buyButton:active{transform:translate(-50%,-50%) translateY(0px);}
+.drop{
+	background-image: url("../graphics/all/drop.png");position: absolute;height: 28px;
+	top: 20%;left: 50%;animation: tagupdown 1s infinite linear;width: 20px;display: none;
+}
+.sellPriceBar{
+	width: 200px;height: 50px;background-color: white;text-align: center;position: absolute;
+	font-size: 44px;color: darkgreen;top: 30%;left: 50%;transform: translate(-50%,0);
+	border:3px solid #734900;
+}
+#sellSymbol{
+	background-image: url("../graphics/all/moneySymbol.png");background-size: cover;
+	width: 22%;height: 90%;position: absolute;left: 2%;top: 50%;transform: translate(0,-50%);
+}
+#sellPrice{
+	width: 76%;height: 100%;position: absolute;top: 0;left: 25%;font-family: sans-serif;
+}
+.sellMinus{
+	top: 45%;left: 17.5%;position: absolute;height: 50px;width: 50px;cursor:url("../graphics/pointer.png"), pointer;
+	background-color: #EFADA7;font-size: 44px;color: white;border-radius: 10px;
+	transition-duration: 0.2s;
+}
+.sellMinus:hover{color: red}
+.sellQuantity{
+	width: 150px;height: 50px;position: absolute;background-color: white;font-family: sans-serif;
+	top: 45%;left: 50%;text-align: center;color: darkgray;font-size: 44px;
+	border:2px solid #734900;transform: translate(-50%,0);
+}
+.sellPlus{
+	top: 45%;left: 71%;position: absolute;height: 50px;width: 50px;cursor:url("../graphics/pointer.png"), pointer;
+	background-color: #9AC3A7;font-size: 42px;color: white;border-radius: 10px;
+	transition-duration: 0.2s;
+}
+.sellPlus:hover{color: green}
+.sellButton2{
+	top: 60%;left: 50%;transform: translate(-50%,0);position: absolute;cursor:url("../graphics/pointer.png"), pointer;
+	width: 120px;height: 40px;background-color: #C1EA4F;color: darkgreen;font-size: 34px;
+	border-radius: 8px;
+}
+.sellButton2:hover{border:2px solid darkgreen;}
+.sellButton2:active{transform: translateY(4px) translate(-50%,0);}
+
+
+
+
+
+
+
+
+
+/*	 ANIMATION	*/
+@keyframes tagupdown{
+	0%{transform: translateY(0%) translate(-50%,0);opacity: 0.6;}
+	10%{transform: translateY(4%) translate(-50%,0);opacity: 0.65;}
+	20%{transform: translateY(8%) translate(-50%,0);opacity: 0.7;}
+	30%{transform: translateY(12%) translate(-50%,0);opacity: 0.75;}
+	40%{transform: translateY(16%) translate(-50%,0);opacity: 0.8;}
+	50%{transform: translateY(20%) translate(-50%,0);opacity: 0.85;}
+	60%{transform: translateY(16%) translate(-50%,0);opacity: 0.8;}
+	70%{transform: translateY(12%) translate(-50%,0);opacity: 0.75;}
+	80%{transform: translateY(8%) translate(-50%,0);opacity: 0.7;}
+	90%{transform: translateY(4%) translate(-50%,0);opacity: 0.65;}
+	100%{transform: translateY(0%) translate(-50%,0);opacity: 0.6;}
+}
+@keyframes turningNight{
+	0%{opacity: 0.05}
+	10%{opacity: 0.1}
+	20%{opacity: 0.15}
+	30%{opacity: 0.2}
+	40%{opacity: 0.25}
+	50%{opacity: 0.3}
+	60%{opacity: 0.35}
+	70%{opacity: 0.4}
+	80%{opacity: 0.45}
+	90%{opacity: 0.5}
+	100%{opacity: 0.5}
+}
+@keyframes turningDay{
+	0%{opacity: 0.5}
+	10%{opacity: 0.45}
+	20%{opacity: 0.4}
+	30%{opacity: 0.35}
+	40%{opacity: 0.3}
+	50%{opacity: 0.25}
+	60%{opacity: 0.2}
+	70%{opacity: 0.15}
+	80%{opacity: 0.1}
+	90%{opacity: 0.05}
+	100%{opacity: 0}
+}
+@keyframes sleep{
+	0%{opacity: 0}
+	10%{opacity: 0.1}
+	20%{opacity: 0.2}
+	30%{opacity: 0.3}
+	40%{opacity: 0.4}
+	50%{opacity: 0.5}
+	60%{opacity: 0.4}
+	70%{opacity: 0.3}
+	80%{opacity: 0.2}
+	90%{opacity: 0.1}
+	100%{opacity: 0}
+}
+@keyframes rotation{
+	from{transform: rotate(1deg);}
+	to{transform: rotate(360deg);}
+}
